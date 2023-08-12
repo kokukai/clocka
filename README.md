@@ -1,4 +1,4 @@
-# clocka
+# Clocka
 Clocka is a sleek and minimalistic stopwatch web app for time tracking, Pomodoro techniques, or simple elegance. Built with HTML, CSS, and JavaScript.
 
 https://kokukai.github.io/clocka/
