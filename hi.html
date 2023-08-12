@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); /* Cool font import */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c2f33 0%, #36393f 50%, #202225 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+        }
+        #header {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          position: absolute;
+          top: 0;
+        }
+        #logo {
+          width: 100px; /* Adjust the size as needed */
+          height: 100px;    
+          margin-right: -20px;
+          filter: invert(1); /* Makes the logo white */
+        }
+        #app-name {
+          font-size: 30px; /* Adjust the size as needed */
+          color: #ffffff; /* Whiter color */
+          font-family: 'Orbitron', sans-serif; /* Cool font */
+        }
+        #stopwatch {
+          font-size: 100px;
+          background: #202225;
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        button {
+          padding: 15px 30px;
+          margin: 5px;
+          font-size: 22px;
+          cursor: pointer;
+          border: none;
+          background: #7289da;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          transition: all 0.3s;
+        }
+        button:hover {
+          background: #5b6eae;
+        }
+    </style>        
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="logo.png" alt="Logo">
+        <span id="app-name">Clocka</span>
+    </div>
+    <div id="stopwatch">00:00</div>
+    <div class="button-container">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
